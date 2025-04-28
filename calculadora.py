@@ -112,6 +112,11 @@ def inverso():
 
 
 def calculadora():
+    """
+    Objetivo da função calculadora():
+        a pessoa escolher qual calculo vai fazer e se deseja parar a função
+    Sem atributos obrigatórios
+    """
     while True:
         escolha = str(input("Escolha o calculo que deseja fazer\n"
                             "(digite qualquer coisa para parar): "))
@@ -135,4 +140,5 @@ def calculadora():
             return ("Obrigado por confiar nos nossos calculos")
 
 
-print(calculadora())
+if __name__ == '__main__':
+    print(calculadora())
