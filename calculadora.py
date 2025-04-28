@@ -1,7 +1,16 @@
-# fazer uma calcudora com as mesmas funções do calculadora do windows
+"""
+Calculadora para realizar calculos simples.
+# Com as mesmas funções da calculadora do Windows
+"""
 
 
 def soma():
+    """
+    Objetivo da função soma():
+        Realizar a soma de N numeros que a pessoa desejar,
+        apertando 0 para parar a soma
+    Sem atributos obrigatórios
+    """
     print("Digite 0 para parar a soma dos numeros")
     somar = 0
     while True:
@@ -12,6 +21,12 @@ def soma():
 
 
 def subtracao():
+    """
+    Objetivo da função subtração():
+        Realizar a subtração de N numeros que a pessoa desejar,
+        apertando 0 para parar a subtração
+    Sem atributos obrigatórios
+    """
     print("Digite 0 para parar subtração dos numeros")
     contador = 0
     menos = 0
@@ -27,6 +42,12 @@ def subtracao():
 
 
 def multiplicacao():
+    """
+    Objetivo da função multiplicação():
+        Realizar a multiplicação de N numeros que a pessoa desejar,
+        apertando 0 para parar a multiplicação
+    Sem atributos obrigatórios
+    """
     print("Digite 0 para parar subtração dos numeros")
     vezes = 1
     while True:
@@ -37,6 +58,12 @@ def multiplicacao():
 
 
 def divisao():
+    """
+    Objetivo da função divisão():
+        Realizar a divisão de N numeros que a pessoa desejar,
+        apertando 0 para parar a divisão
+    Sem atributos obrigatórios
+    """
     print("Digite 0 para parar subtração dos numeros")
     divisaoo = 1
     contador = 0
@@ -52,19 +79,36 @@ def divisao():
 
 
 def raiz():
+    """
+    Objetivo da função raiz():
+        Realizar a raiz quadrada do número que a pessoa desejar,
+    Sem atributos obrigatórios
+    """
     raizQ = float(input(("Digite o numero que quer ver a raiz: "))) ** 0.5
     return f"resultado {raizQ}"
 
 
 def potencia():
+    """
+    Objetivo da função potencia():
+        Realizar uma conta de potenciação,
+        com a base e o expoente que a pessoa desejar,
+    Sem atributos obrigatórios
+    """
     base = float(input("Digite a base que deseja: "))
     expoente = float(input("Digite o exponte que deseja: "))
     return f"Resutado: {base ** expoente}"
 
 
 def inverso():
-    numero = 1 / float(input("Digite o numero que deseja ver o inverso: "))
-    return f"Resultado: {numero}"
+    """
+    Objetivo da função inverso():
+        Mostrar o inverso do número que a pessoa digitou
+    Sem atributos obrigatórios
+    """
+    numero = float(input("Digite o numero que deseja ver o inverso: "))
+    inversoo = 1 / numero
+    return f"Resultado: {inversoo}\nou: {1/numero}"
 
 
 def calculadora():
